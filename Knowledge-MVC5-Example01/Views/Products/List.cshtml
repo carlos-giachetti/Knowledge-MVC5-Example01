@@ -1,0 +1,21 @@
+﻿<h2>Products Catalog</h2>
+<table>
+    <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Created</th>
+    </thead>
+
+    <tbody>
+        @foreach (var product in Model)
+        {
+        <tr>
+            <td>@product.Id</td>
+            <td>@product.Name</td>
+            <td>@product.Type</td>
+            <td>@product.Created</td>
+        </tr>
+        }
+    </tbody>
+</table>
